@@ -32,7 +32,7 @@ public class Level3Page {
         List<WebElement> allText = driver.findElements(By.cssSelector("input[type='text']"));
 
         for (WebElement element : allText) {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
             wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys("Text");
         }
 

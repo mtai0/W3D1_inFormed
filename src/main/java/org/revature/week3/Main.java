@@ -41,5 +41,7 @@ public class Main {
 
         Level10Page l10 = PageFactory.initElements(driver, Level10Page.class);
         l10.correctInputs();
+
+        driver.quit();
     }
 }
